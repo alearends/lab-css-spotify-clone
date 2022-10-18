@@ -1,8 +1,445 @@
 /*
 Colors:
-
-Text: 1A1A1A
+Text: #1A1A1A
 Green: #00B172
 White: #FFF
-
 */
+
+/* ---------------------- */
+/* ----FIRST MOBILE------ */
+/* ---------------------- */
+
+/* ---- Nav & Header --- */
+
+body {
+    margin: 3%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+    width: 280px;
+    height: 35px;
+}
+
+.nav-bar ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: #1A1A1A;
+    font-size: 60%;
+    font-weight: 700;
+    width: 100%;
+    justify-content: space-around;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00B172;
+}
+
+#image-center {
+    width: 100%;
+    height: auto;
+}
+
+.text-center {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+}
+
+h1 {
+    letter-spacing: 1px;
+    font-size: 120%;
+}
+
+h3 {
+    font-size: 60%;
+    margin: 2% 0;
+    letter-spacing: 1px;
+}
+
+/* ---- FIN Nav & Header> --- */
+/* ---- Main --- */
+
+main {
+    display: flex;
+    border-color: rgba(255, 153, 0, 0.329);
+    border-style: groove;
+    flex-direction: column;
+    padding-bottom: 1%;
+}
+
+h2 {
+    font-size: 100%;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #00B172;
+    margin-bottom: 2%;
+
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-section-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#icono {
+    width: 20%;
+    padding-bottom: 5%;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 2%;
+    width: 60%;
+}
+
+#hd-music{
+    display: flex;
+}
+
+h4 {
+    font-size: 120%;
+    text-underline-position: auto;
+    text-align: center;
+    color: #00B172;
+    margin: 0;
+    font-weight: 700;
+    font-stretch: extra-expanded;
+}
+
+p {
+    font-size: 80%;
+    text-underline-position: auto;
+    text-align: center;
+    font-stretch: extra-condensed;
+    margin-top: 2%;
+}
+
+/* ---- FIN Main> --- */
+/* ---- Prefooter ---- */
+.prefooter{
+    display: flex;
+    background-color: #00B172;
+    color: #fff;
+    flex-direction: column;
+    padding: 2%;
+    margin-top: 1%;
+
+}
+.prefooter-kanye{
+padding-bottom: 3%;
+}
+#h2-kanye{
+    text-decoration: none;
+    font-weight: 600; 
+    font-size: 90%;
+    text-align: left;
+    padding-bottom: 0;
+}
+hr{
+    height: 2px;
+    color: #fff;
+    width: 52%;
+    margin: 0;
+    
+}
+
+.prefooter-grid {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.prefooter-grid-article{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.article-kanye{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.article-kanye h4{
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+
+}
+.article-kanye p{
+    font-weight: 300;
+    text-align: center;
+}
+.prefooter-grid-logo{
+    width: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#prefooter-logo {
+    width: 26%;
+    height: auto;
+    padding: 5%;
+}
+
+#prefooter-app{
+    width: 100%;
+    height: auto;
+    
+}
+
+.prefooter-grid-Kanye{
+    width: 1fr;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -- FIN Prefooter> -- */
+
+
+/* ----------------------- */
+/* ------ Full size ------ */
+/* ----------------------- */
+
+@media (min-width: 1024px) {
+
+    /* ---- Nav & Header --- */
+
+    body {
+        margin: 0px 20%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        padding-bottom: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #logo {
+        width: 200px;
+        height: auto;
+        padding-left: 7%;
+        padding-top: 2%;
+    }
+
+    .nav-bar {
+        width: 400px;
+        height: auto;
+        display: contents;
+    }
+
+    .nav-bar ul {
+        justify-content: flex-end;
+        text-align: center;
+        font-size: 200%;
+        font-weight: 700;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        padding-right: 2%;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    ul li {
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #image-center {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-center {
+        top: 28%
+    }
+
+    h1 {
+        font-size: 500%;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 200%;
+        font-weight: 400;
+        bottom: 30%;
+        margin: 0;
+    }
+
+
+    /* ---- FIN Nav & Header> --- */
+    /* ---------- Main --------- */
+    main {
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 300%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-section-article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #hd-music{
+        padding-top: 1%;
+        display: flex;
+    }
+
+    #icono {
+        width: 20%;
+        padding-bottom: 5%;
+    }
+    
+    .article-text {
+        display: flex;
+        padding: 2%;
+        width: 60%;
+    }
+    
+    h4 {
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 180%;
+        text-underline-position: auto;
+        text-align: center;
+        font-stretch: extra-condensed;
+        margin-top: 2%;
+    }
+    
+    /* ---- FIN Main> --- */
+    /* ---- Prefooter ---- */
+    .prefooter{
+        padding: 2%;
+        padding-left: 7%;
+        padding-right: 6%;
+    }
+    #h2-kanye{
+        font-size: 300%;
+        margin-bottom: 1%;
+    }
+    hr{
+        width: 46%;
+    }
+    .prefooter-grid{
+        display: flex;
+        flex-direction: row;
+    }
+    .prefooter-grid-article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .article-kanye{
+    
+    }
+    .article-kanye h4{
+        text-align: left;
+    }
+    .article-kanye p{
+        text-align: left;
+    }
+    .prefooter-grid-logo{
+        width: 120%;
+        padding: 5%;
+    }
+    #prefooter-logo{
+        width: 30%;
+        padding: 5%;
+    }
+
+    .prefooter-grid-Kanye{
+        width: 100%;
+        padding: 0;
+    }
+    
+    
+    
+    /* -- FIN Prefooter> -- */
+}
